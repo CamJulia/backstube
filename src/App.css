@@ -1,22 +1,35 @@
+:root {
+  --darkwhite: #e6eaf3;
+  --lightblue: #45deeb;
+  --turkis: #038b71;
+  --lightbrown: #bd9563;
+  --darkbrown: #723934;
+}
+
 .App {
+  text-align: center;
+  height: 100vh;
+}
+
+.GridContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 6fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+}
+
+.zettel,
+.rezepte {
+  background-color: var(--darkwhite);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.cookieName {
+  width: 50%;
+  padding: 0.5em;
+  margin: 1em auto;
+  background-color: var(--lightbrown);
+  border-radius: 10px;
+  cursor: pointer;
 }
